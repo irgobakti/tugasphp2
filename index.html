@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Belanja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Belanja</h2>
+        <form action="proses.php" method="get" id="online" onsubmit="return transaksi()">
+            <label for="nama">Nama Pelanggan:</label>
+            <input type="text" name="nama" id="nama" required>
+            
+            <label for="produk">Produk:</label>
+            <select name="produk" id="produk" required>
+                <option value="">-- Pilihan Produk --</option>
+                <option value="TV">TV</option>
+                <option value="AC">AC</option>
+                <option value="Kulkas">Kulkas</option>
+            </select>
+
+            <label for="jumlah">Jumlah Beli:</label>
+            <input type="number" name="jumlah" id="jumlah" required>
+
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+
+   
+</body>
+</html>
+
+
+    
+       
